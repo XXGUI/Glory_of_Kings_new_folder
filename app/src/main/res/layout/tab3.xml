@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbBtn_0"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="小地图偏移"
+                android:textColor="#a6afbc" />
+
+            <RadioButton
+                android:id="@+id/rbBtn_1"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="方框偏移"
+                android:textColor="#a6afbc" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:text="左右调整" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@mipmap/progress_dot"
+            android:thumbOffset="0dp" />
+        <SeekBar
+            android:id="@+id/seekbar3"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@mipmap/progress_dot"
+            android:thumbOffset="0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:text="上下调整" />
+
+        <SeekBar
+            android:id="@+id/seekbar2"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@mipmap/progress_dot"
+            android:thumbOffset="0dp" />
+        <SeekBar
+            android:id="@+id/seekbar4"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@mipmap/progress_dot"
+            android:thumbOffset="0dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

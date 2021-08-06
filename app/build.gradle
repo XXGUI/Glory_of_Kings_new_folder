@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+
+    defaultConfig {
+        applicationId "com.qy"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                outputFileName = "新建文件夹.apk"
+            }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../signApk/nfKey.jks")
+            storePassword '123456'
+            keyAlias 'nfKey'
+            keyPassword '123456'
+        }
+
+        debug {
+            storeFile file("../signApk/nfKey.jks")
+            storePassword '123456'
+            keyAlias 'nfKey'
+            keyPassword '123456'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+//    ndkVersion '21.1.6352462'
+}
+
+dependencies {
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+}
