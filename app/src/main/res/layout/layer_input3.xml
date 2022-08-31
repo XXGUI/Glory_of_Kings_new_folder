@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aaa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" 功能介绍 | 使用教程 "
+            android:textColor="#b98c52"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/layer_input3_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="180dp"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:paddingRight="30dp"
+            android:text="新建文件夹"
+            android:textColor="#a6afbc"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/layer_input3_yes"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@mipmap/btn3"
+            android:button="@null"
+            android:text=" 我知道了 "
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

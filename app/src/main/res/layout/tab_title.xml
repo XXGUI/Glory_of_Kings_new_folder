@@ -1,0 +1,63 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="90px"
+                android:paddingBottom="110px"
+                android:scrollbarThumbVertical="@android:color/transparent">
+
+                <com.nf.st.UIVerticalTabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bg_shadow"/>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-7dp"
+        android:src="@mipmap/min" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="7dp"
+        android:background="@mipmap/btn3"
+        android:button="@null"
+        android:checked="true"
+        android:text="退出程序"
+        android:textColor="#FFFFFF" />
+</TabHost>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/left"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/start_touxiang"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像显示"
+                android:paddingLeft="5dp"
+                android:textColor="#a6afbc" />
+
+            <CheckBox
+                android:id="@+id/start_fangkuang"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="方框显示"
+                android:paddingLeft="5dp"
+                android:textColor="#a6afbc" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/start_jineng_jishi"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="技能血量"
+                android:paddingLeft="5dp"
+                android:textColor="#a6afbc" />
+
+            <CheckBox
+                android:id="@+id/start_yeguai_jishi"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="野怪计时"
+                android:paddingLeft="5dp"
+                android:textColor="#a6afbc" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/start_show_bingxian"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="显示兵线"
+                android:paddingLeft="5dp"
+                android:textColor="#a6afbc" />
+
+            <CheckBox
+                android:id="@+id/update_yeguai_rd"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="野怪阵营反转"
+                android:paddingLeft="5dp"
+                android:textColor="#a6afbc" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="小地图颜色"
+                android:layout_weight="1"
+                android:textColor="#a6afbc" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="方框颜色"
+                android:layout_weight="1"
+                android:textColor="#a6afbc" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ColorBar
+                android:id="@+id/minMapColorBar"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+            <com.ColorBar
+                android:id="@+id/maxMapColorBar"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/bg_shadow"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/open_tpis"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="敌方信息提示"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:textColor="#a6afbc" />
+
+        <CheckBox
+            android:id="@+id/start_all"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="全开/全关"
+            android:paddingLeft="5dp"
+            android:textColor="#a6afbc" />
+
+        <CheckBox
+            android:id="@+id/start_zimiao"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="百里自瞄"
+            android:paddingLeft="5dp"
+
+            android:textColor="#a6afbc" />
+        <CheckBox
+            android:id="@+id/start_shark"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="小地图共享"
+            android:paddingLeft="5dp"
+            android:textColor="#a6afbc" />
+
+        <CheckBox
+            android:id="@+id/start_huizhi"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:text="开启绘制"
+            android:paddingLeft="5dp"
+            android:textColor="#a6afbc" />
+    </LinearLayout>
+</LinearLayout>
