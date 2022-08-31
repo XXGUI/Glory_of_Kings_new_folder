@@ -47,16 +47,11 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.LayoutInflaterCompat;
 import androidx.core.view.LayoutInflaterFactory;
 
-import com.CrashHandler;
 import com.DeviceInfoUtils;
 import com.JedisUtil;
 import com.LruCacheUtils;
-import com.Xor;
 import com.client.HttpURLConnectionUtil;
-import com.event.GetEventTask;
-import com.jni.JniDemo;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -77,9 +72,9 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
     public static String path = "/sdcard/ST", appVersionDB, fileVersionDB, fileVersion;
-    public static String authUrl = "101.43.176.252";
-    public static String fileUrl = "http://101.43.176.252:8091/stfile";
-    public static String redisUrl = "101.43.176.252";
+    public static String authUrl = "验证服务器地址";
+    public static String fileUrl = "二进制服务器地址";
+    public static String redisUrl = "缓存服务器地址";
     public static final String ABC = "程序已开源自行寻找，无需破解。";
     public FloatWindow floatWindow;
     public static LruCacheUtils lruCacheUtils;
@@ -274,8 +269,6 @@ public class MainActivity extends AppCompatActivity {
             }
             x = getDeviceWidth(this);
             y = getDeviceHeight(this);
-            phoneInfo = "IP: " + DeviceInfoUtils.getLocalIPAddress() + " \n主板名: TEST";
-            phoneInfo = "A" + Xor.encode(phoneInfo);
             boolean auth = false;
             try {
                 auth = HttpURLConnectionUtil.auth();
