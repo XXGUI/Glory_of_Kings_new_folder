@@ -8,67 +8,199 @@
 
     <LinearLayout
         android:id="@+id/hero_tx"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="350px"
+        android:layout_height="350px"
         android:background="#00000000"
         android:orientation="vertical"
         android:rotation="-90"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/hero1"
-            android:layout_width="45px"
-            android:layout_height="45px"
+        <FrameLayout
+            android:id="@+id/linear_layout_min_map_hero1"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:orientation="vertical"
             android:rotation="90"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/_888"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/hero2"
-            android:layout_width="45px"
-            android:layout_height="45px"
-            android:rotation="90"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/_888"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/hero1"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginLeft="3px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/_888" />
 
-        <ImageView
-            android:id="@+id/hero3"
-            android:layout_width="45px"
-            android:layout_height="45px"
-            android:rotation="90"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/_888"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/go_home1"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginBottom="2px"
+                android:layout_gravity="left|bottom"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/go_home" />
 
-        <ImageView
-            android:id="@+id/hero4"
-            android:layout_width="45px"
-            android:layout_height="45px"
-            android:rotation="90"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/_888"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ProgressBar
+                android:id="@+id/min_map_hero_hp1"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8px"
+                android:layout_gravity="bottom|left"
+                android:progressDrawable="@drawable/max_map_hero_info_hp"
+                android:secondaryProgress="100" />
+        </FrameLayout>
 
-        <ImageView
-            android:id="@+id/hero5"
-            android:layout_width="45px"
-            android:layout_height="45px"
+        <FrameLayout
+            android:id="@+id/linear_layout_min_map_hero2"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:orientation="vertical"
             android:rotation="90"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/_888"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/hero2"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginLeft="3px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/_888" />
+
+            <ImageView
+                android:id="@+id/go_home2"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginBottom="2px"
+                android:layout_gravity="left|bottom"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/go_home" />
+
+            <ProgressBar
+                android:id="@+id/min_map_hero_hp2"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8px"
+                android:layout_gravity="bottom|left"
+                android:progressDrawable="@drawable/max_map_hero_info_hp"
+                android:secondaryProgress="100" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/linear_layout_min_map_hero3"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:rotation="90"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/hero3"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginLeft="3px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/_888" />
+
+            <ImageView
+                android:id="@+id/go_home3"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginBottom="2px"
+                android:layout_gravity="left|bottom"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/go_home" />
+
+            <ProgressBar
+                android:id="@+id/min_map_hero_hp3"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8px"
+                android:layout_gravity="bottom|left"
+                android:progressDrawable="@drawable/max_map_hero_info_hp"
+                android:secondaryProgress="100" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/linear_layout_min_map_hero4"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:rotation="90"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/hero4"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginLeft="3px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/_888" />
+
+            <ImageView
+                android:id="@+id/go_home4"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginBottom="2px"
+                android:layout_gravity="left|bottom"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/go_home" />
+
+            <ProgressBar
+                android:id="@+id/min_map_hero_hp4"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8px"
+                android:layout_gravity="bottom|left"
+                android:progressDrawable="@drawable/max_map_hero_info_hp"
+                android:secondaryProgress="100" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/linear_layout_min_map_hero5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:rotation="90"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/hero5"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginLeft="3px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/_888" />
+
+            <ImageView
+                android:id="@+id/go_home5"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginBottom="2px"
+                android:layout_gravity="left|bottom"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/go_home" />
+
+            <ProgressBar
+                android:id="@+id/min_map_hero_hp5"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8px"
+                android:layout_gravity="bottom|left"
+                android:progressDrawable="@drawable/max_map_hero_info_hp"
+                android:secondaryProgress="100" />
+        </FrameLayout>
+
     </LinearLayout>
 
     <TextView
@@ -76,7 +208,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textColor="#FFB800"
+        android:textColor="#FFFFFF"
         android:textSize="20px"
         tools:ignore="MissingConstraints" />
 
@@ -85,7 +217,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textColor="#FFB800"
+        android:textColor="#FFFFFF"
         android:textSize="20px"
         tools:ignore="MissingConstraints" />
 
@@ -94,7 +226,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textColor="#FFB800"
+        android:textColor="#FFFFFF"
         android:textSize="20px"
         tools:ignore="MissingConstraints" />
 
@@ -103,9 +235,93 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textColor="#FFB800"
+        android:textColor="#FFFFFF"
         android:textSize="20px"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/weLizard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/weWolf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/wePid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/weBird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/enemyLizard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/enemyWolf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/enemyPid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/enemyBird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="15px"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/soldie"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:rotation="0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

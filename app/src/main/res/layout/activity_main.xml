@@ -3,25 +3,367 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#393D49" >
+    android:background="@mipmap/bg">
+
+    <com.nf.st.LGvideoview
+        android:id="@+id/bg_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left"
+        android:gravity="right"
         android:orientation="vertical"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginBottom="7dp"
         tools:ignore="MissingConstraints">
-        <TextView
-            android:id="@+id/app_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#FFF"
-            tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/gameVersion"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|left"
+        android:paddingTop="7px"
+        android:paddingRight="20px"
+        android:background="@mipmap/radio_group_normal"
+        android:button="@null"
+        android:text="支持游戏版本：0.0.0"
+        android:textColor="#a6afbc"
+        android:gravity="right"
+        android:textSize="10sp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/authUrlBtn"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|left"
+        android:paddingTop="7px"
+        android:paddingRight="20px"
+        android:background="@mipmap/radio_group_normal"
+        android:button="@null"
+        android:text="验证地址：0.0.0"
+        android:textColor="#a6afbc"
+        android:gravity="right"
+        android:textSize="10sp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/fileUrlBtn"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|left"
+        android:paddingTop="7px"
+        android:paddingRight="20px"
+        android:background="@mipmap/radio_group_normal"
+        android:button="@null"
+        android:text="文件地址：0.0.0"
+        android:textColor="#a6afbc"
+        android:gravity="right"
+        android:textSize="10sp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/redisUrlBtn"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|left"
+        android:paddingTop="7px"
+        android:paddingRight="20px"
+        android:background="@mipmap/radio_group_normal"
+        android:button="@null"
+        android:text="中间件地址：0.0.0"
+        android:textColor="#a6afbc"
+        android:gravity="right"
+        android:textSize="10sp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|left"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/clearIp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="top|left"
+            android:paddingTop="7px"
+            android:paddingRight="20px"
+            android:background="@mipmap/btn4"
+            android:button="@null"
+            android:text="重置地址"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1.5"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/setIp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="top|left"
+            android:paddingTop="7px"
+            android:paddingRight="20px"
+            android:background="@mipmap/btn3"
+            android:button="@null"
+            android:text="设置服务器地址"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|right"
+        android:gravity="right"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|right"
+            android:gravity="right"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/bz_or_uid"
+                android:layout_width="400dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="设备名称"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/edit_bz"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/edit" />
+            <Button
+                android:id="@+id/copy_uuid"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/btn4"
+                android:button="@null"
+                android:text="复制ID"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Spinner android:id="@+id/version"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/btn4"
+                android:popupBackground="@drawable/shape_5dp_dropdown"
+                android:outlineAmbientShadowColor="#FFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|right"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layout_marginRight="25dp"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/out_app"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="25dp"
+                android:background="@mipmap/btn3"
+                android:button="@null"
+                android:text="退出辅助"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/tpis"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="50dp"
+                android:src="@mipmap/tpis2" />
+
+            <ImageView
+                android:id="@+id/jc"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="50dp"
+                android:src="@mipmap/tpis3" />
+
+            <ImageView
+                android:id="@+id/kefu"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="50dp"
+                android:src="@mipmap/kefu" />
+
+            <ImageView
+                android:id="@+id/bug"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="50dp"
+                android:src="@mipmap/bug" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:alpha=".95"
+            android:background="@mipmap/layer"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text=" 通 知 公 告 "
+                android:textColor="#b98c52"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/app_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="新建文件夹"
+                android:textColor="#a6afbc"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/open_game_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/open_game"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="7dp"
+                android:background="@mipmap/start_game"
+                android:button="@null"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:alpha="0.6"
+            android:background="#11243B"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="100dp"
+            android:paddingLeft="100dp"
+            android:paddingTop="10dp">
+
+
+            <com.SeekBarCustom
+                android:id="@+id/downloadFile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@mipmap/tm"
+                android:thumbOffset="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|left"
+                android:layout_marginTop="-15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/downloadFileTextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:text="正在下载"
+                    android:textColor="#a6afbc"
+                    android:textSize="15sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/downloadFileSizeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingTop="10dp"
+                    android:text="0%"
+                    android:textColor="#a6afbc"
+                    android:textSize="15sp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

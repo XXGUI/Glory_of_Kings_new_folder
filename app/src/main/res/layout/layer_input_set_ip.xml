@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/layer"
+    android:orientation="vertical"
+    android:id="@+id/setIp"
+    android:paddingLeft="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:paddingTop="10dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="验证服务地址："
+                    android:textSize="18dp"
+                    android:textColor="#a6afbc" />
+
+                <EditText
+                    android:id="@+id/auth_ip_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20px"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_edittext"
+                    android:textSize="18dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:paddingTop="10dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="文件服务地址："
+                    android:textSize="18dp"
+                    android:textColor="#a6afbc" />
+
+                <EditText
+                    android:id="@+id/file_ip_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20px"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_edittext"
+                    android:textSize="18dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:paddingTop="10dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="消息中间件服务地址："
+                    android:textSize="18dp"
+                    android:textColor="#a6afbc" />
+
+                <EditText
+                    android:id="@+id/redis_ip_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20px"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/bg_edittext"
+                    android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@mipmap/btn4"
+            android:button="@null"
+            android:text=" 取   消 "
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@mipmap/btn3"
+            android:button="@null"
+            android:text=" 确   定 "
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

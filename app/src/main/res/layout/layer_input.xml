@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/layer"
+    android:orientation="vertical"
+    android:paddingLeft="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:paddingTop="20dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="10dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tpis_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_edittext"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/tpis_password"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginBottom="30dp"
+            android:text=""
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@mipmap/btn4"
+            android:button="@null"
+            android:text=" 取   消 "
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@mipmap/btn3"
+            android:button="@null"
+            android:text=" 确   定 "
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

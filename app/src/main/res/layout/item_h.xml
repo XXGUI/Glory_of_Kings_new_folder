@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_h"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textColor="#7f9ec6"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/rename_h"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/btn4"
+            android:button="@null"
+            android:checked="true"
+            android:text=" 重命名 "
+            android:focusable="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/delete_h"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/btn4"
+            android:button="@null"
+            android:checked="true"
+            android:text=" 删 除 "
+            android:focusable="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/start_h"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/btn3"
+            android:button="@null"
+            android:checked="true"
+            android:text=" 启 用 "
+            android:focusable="false"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,7 +1,10 @@
 # Glory_of_Kings_new_folder
 King glory drawing auxiliary template
 
-S24王者荣耀模板，原生Android版本打包即用
-类王者荣耀UI，第一版
+2022-08-31 S28 v2.0
+里面有很多界面上能看见功能都没做
+目前能用的只有绘制
 
-新版没开不用找了
+有能力的可以拉下来自己加功能
+
+希望拉下去改了标注来源

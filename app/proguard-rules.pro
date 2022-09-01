@@ -1,24 +1,4 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
-
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
-
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
 
 # 代码混淆压缩比，在0~7之间，默认为5，一般不做修改
 -optimizationpasses 5
@@ -164,7 +144,6 @@
 
 ####################jpush##################
 -keep class cn.jpush.** { *; }
--keep public class com.umeng.fb.ui.ThreadView { } #双向反馈功能代码不混淆
 -dontwarn cn.jpush.**
 -keepclassmembers class * {
   public <init>(org.json.JSONObject);
@@ -180,6 +159,16 @@
   public static **[] values();
   public static ** valueOf(java.lang.String);
 }
+
+# 保留反射中用到的类和方法，到时根据具体情况再改
+# 反编译测试的时候有效，运行时也与未混淆情况一样
+-keepclassmembers class com.** {
+   public *;
+   protected *;
+   private *;
+}
+-keep class com.RpcObject {*;}
+-keep class com.client.* {*;}
 
 ################ButterKnife###################
 -keep class butterknife.** { *; }

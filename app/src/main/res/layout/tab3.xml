@@ -3,15 +3,31 @@
     android:id="@+id/set"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginLeft="7dp"
+    android:layout_marginTop="10dp"
     android:layout_marginRight="7dp"
-    android:layout_marginBottom="7dp">
+    android:layout_marginBottom="7dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/clearSet"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/btn4"
+        android:button="@null"
+        android:checked="true"
+        android:text="重置设置"
+        android:textColor="#FFFFFF" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginTop="-10dp"
         android:orientation="horizontal">
 
         <RadioGroup
@@ -44,12 +60,24 @@
                 android:gravity="center"
                 android:text="方框偏移"
                 android:textColor="#a6afbc" />
+
+            <RadioButton
+                android:id="@+id/rbBtn_2"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="其他设置"
+                android:textColor="#a6afbc" />
         </RadioGroup>
 
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/set_layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -58,72 +86,291 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FFF"
+            android:layout_weight="3"
             android:gravity="center"
-            android:layout_weight="4"
-            android:text="左右调整" />
+            android:text="左右调整"
+            android:textColor="#a6afbc" />
 
         <SeekBar
             android:id="@+id/seekbar"
-            android:layout_weight="1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_weight="1"
             android:maxHeight="5dp"
+            android:min="-300"
             android:minHeight="5dp"
-            android:progressDrawable="@drawable/seekbar_style"
+            android:progressDrawable="@drawable/seekbar2_style"
             android:thumb="@mipmap/progress_dot"
             android:thumbOffset="0dp" />
+
         <SeekBar
             android:id="@+id/seekbar3"
-            android:layout_weight="1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_weight="1"
             android:maxHeight="5dp"
+            android:min="-300"
             android:minHeight="5dp"
-            android:progressDrawable="@drawable/seekbar_style"
+            android:progressDrawable="@drawable/seekbar2_style"
             android:thumb="@mipmap/progress_dot"
             android:thumbOffset="0dp" />
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/set_layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="10dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FFF"
+            android:layout_weight="3"
             android:gravity="center"
-            android:layout_weight="4"
-            android:text="上下调整" />
+            android:text="上下调整"
+            android:textColor="#a6afbc" />
 
         <SeekBar
             android:id="@+id/seekbar2"
-            android:layout_weight="1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_weight="1"
             android:maxHeight="5dp"
+            android:min="-300"
             android:minHeight="5dp"
-            android:progressDrawable="@drawable/seekbar_style"
+            android:progressDrawable="@drawable/seekbar2_style"
             android:thumb="@mipmap/progress_dot"
             android:thumbOffset="0dp" />
+
         <SeekBar
             android:id="@+id/seekbar4"
-            android:layout_weight="1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_weight="1"
             android:maxHeight="5dp"
+            android:min="-300"
             android:minHeight="5dp"
-            android:progressDrawable="@drawable/seekbar_style"
+            android:progressDrawable="@drawable/seekbar2_style"
             android:thumb="@mipmap/progress_dot"
             android:thumbOffset="0dp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/set_layout1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="大小调整"
+            android:textColor="#a6afbc" />
+
+        <SeekBar
+            android:id="@+id/seekbar1_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:max="500"
+            android:maxHeight="5dp"
+            android:min="200"
+            android:minHeight="5dp"
+            android:progress="350"
+            android:progressDrawable="@drawable/seekbar2_style"
+            android:thumb="@mipmap/progress_dot"
+            android:thumbOffset="0dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/set_layout2_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="大小调整"
+            android:textColor="#a6afbc" />
+
+        <SeekBar
+            android:id="@+id/seekbar2_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:max="400"
+            android:maxHeight="5dp"
+            android:min="200"
+            android:minHeight="5dp"
+            android:progress="300"
+            android:progressDrawable="@drawable/seekbar2_style"
+            android:thumb="@mipmap/progress_dot"
+            android:thumbOffset="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="刷新速度"
+                android:textColor="#a6afbc" />
+
+            <SeekBar
+                android:id="@+id/refresh_rate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:max="500"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progress="5"
+                android:progressDrawable="@drawable/seekbar2_style"
+                android:thumb="@mipmap/progress_dot"
+                android:thumbOffset="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="闪屏速度"
+                android:textColor="#a6afbc" />
+
+            <SeekBar
+                android:id="@+id/refresh_rate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/seekbar2_style"
+                android:thumb="@mipmap/progress_dot"
+                android:thumbOffset="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_jishi_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="敌方信息位置偏移"
+            android:textColor="#a6afbc" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="左右偏移"
+                android:textColor="#a6afbc" />
+
+            <SeekBar
+                android:id="@+id/update_jishi_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:min="-300"
+                android:max="2000"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar2_style"
+                android:thumb="@mipmap/progress_dot"
+                android:thumbOffset="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="上下偏移"
+                android:textColor="#a6afbc" />
+
+            <SeekBar
+                android:id="@+id/update_jishi_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:min="-300"
+                android:max="1000"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar2_style"
+                android:thumb="@mipmap/progress_dot"
+                android:thumbOffset="0dp" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
